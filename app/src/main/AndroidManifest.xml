@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.ricardo.developer.cultuascnpj">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_cnpj"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_cnpj"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CultuasCNPJ">
+        <activity android:name=".view.activity.TelaPrincipal">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".view.activity.Result"></activity>
+        <activity android:name=".view.activity.Detalhes"></activity>
+    </application>
+
+</manifest>

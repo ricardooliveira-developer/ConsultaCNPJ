@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="3dp">
+
+
+    <androidx.cardview.widget.CardView
+        style="@style/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_titulo"
+                    style="@style/sub_titulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="0dp"
+                    android:background="@color/azul_base"
+                    android:padding="10sp"
+                    android:text="TITULO"
+                    android:textColor="@color/white"></TextView>
+
+                <TextView
+                    android:id="@+id/tv_cnpj"
+                    style="@style/descricao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CNPJ:"></TextView>
+
+                <TextView
+                    android:id="@+id/tv_razao_social"
+                    style="@style/descricao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Razão Social:"></TextView>
+
+                <TextView
+                    android:id="@+id/tv_nome_fantasia"
+                    style="@style/descricao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nome Fantasia:"></TextView>
+
+                <TextView
+                    android:id="@+id/tv_data_abertura"
+                    style="@style/descricao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Data de Abertura:"></TextView>
+
+                <TextView
+                    android:id="@+id/tv_tipo"
+                    style="@style/descricao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tipo:"></TextView>
+
+                <TextView
+                    android:id="@+id/tv_situacao"
+                    style="@style/descricao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Situação:"></TextView>
+
+                <TextView
+                    android:id="@+id/tv_natureza_juridica"
+                    style="@style/descricao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Natureza Jurídica:"></TextView>
+
+                <TextView
+                    android:id="@+id/tv_capital_social"
+                    style="@style/descricao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Capital Social:"></TextView>
+
+                <TextView
+                    android:id="@+id/tv_endereco"
+                    style="@style/descricao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Endereço: "></TextView>
+
+                <TextView
+                    android:id="@+id/tv_contato"
+                    style="@style/descricao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contatos:"></TextView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="12dp"
+                    android:background="#2C000000"></View>
+
+                <TextView
+                    android:id="@+id/tv_atividade_principal"
+                    style="@style/descricao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Atividade Principal"></TextView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="12dp"
+                    android:background="#2C000000"></View>
+
+                <TextView
+                    android:id="@+id/tv_atividade_secundaria"
+                    style="@style/descricao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Atividade Secundaria"></TextView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="12dp"
+                    android:background="#2C000000"></View>
+
+                <TextView
+                    android:id="@+id/tv_quadro_socios"
+                    style="@style/descricao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Quadro de sócios"></TextView>
+
+                <Button
+                    android:id="@+id/btn_salvar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:padding="15dp"
+                    android:text="Salvar"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:visibility="gone"></Button>
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
